@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+header{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+header .logo h2{
+	font-size: 19px;
+}
+
+header .container{
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.2rem;
+}
+
+header .container .signup_btn_container button{
+	padding: 12px 2.4rem;
+	border: none;
+	background-color: #1d9bf0;
+	cursor: pointer;
+}
+
+header .container .signup_btn_container button a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+.signup_container{
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	padding: 0px 1rem;
+}
+
+.signup_container h1{
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.signup_container .container .actual_form .single_input{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.signup_container .container .actual_form .single_input label{
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.signup_container .container .actual_form .single_input input{
+	padding: 15px 3rem;
+	font-size: 18px;
+	color: grey;
+	margin-bottom: 10px;
+}
+
+.signup_container .container .actual_form .single_input input:focus{
+	outline: none;
+}
+
+.signup_container .container .actual_form .signup_btn{
+	padding: 15px 3rem;
+	border: none;
+	background-color: #1d9bf0;
+	cursor: pointer;
+	color: #fff;
+	font-size: 19px;
+}
+
+@media screen and (max-width: 700px){
+	header .container .logo h2{
+		font-size: 1.3rem;
+	}
+
+	header .container .signup_btn_container button{
+		padding: 10px 1.2rem;
+	}
+
+	header .container .signup_btn_container button a{
+		font-size: 16px;
+	}
+
+	.signup_container h1{
+		font-size: 22px;
+	}
+
+	.signup_container .container .actual_form .single_input input{
+		padding: 12px 1.5rem;
+	}
+}
